@@ -11,6 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.809.0.min.js"></script>
     <style>
       .postingbox {
         padding: 50px;
@@ -47,6 +48,15 @@
       .mybtn > button {
         margin-right: 10px;
       }
+
+      #uploadbtn {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 30px;
+        margin-top: 20px;
+        /* background-color: black; */
+      }
     </style>
     <script type="module">
       // Firebase SDK 라이브러리 가져오기
@@ -81,6 +91,7 @@
       const param =
         window.location.search && decodeURI(window.location.search.slice(6));
 
+      let aws_image_url = "";
       if (param) {
         console.log("have params");
         const q = query(
@@ -107,7 +118,8 @@
 
         $("#postingbtn").click(async () => {
           let name = $("#name").val();
-          let image = $("#image").val();
+          //   let image = $("#image").val();
+          let image = aws_image_url;
           let role = $("#role").val();
           let mbti = $("#mbti").val();
           let github = $("#github").val();
@@ -127,15 +139,20 @@
             oneintro: oneintro,
             intro: intro,
           };
-          await updateDoc(doc(db, "화이팅하시조", id), body);
-          alert("수정이 완료되었습니다.");
-          window.close();
+          if (!image) {
+            alert("이미지 파일을 업로드해 주세요.");
+          } else {
+            await updateDoc(doc(db, "화이팅하시조", id), body);
+            alert("수정이 완료되었습니다.");
+            window.close();
+          }
         });
       } else {
         console.log("no params");
         $("#postingbtn").click(async function () {
           let name = $("#name").val();
-          let image = $("#image").val();
+          //   let image = $("#image").val();
+          let image = aws_image_url;
           let role = $("#role").val();
           let mbti = $("#mbti").val();
           let github = $("#github").val();
@@ -155,9 +172,13 @@
             oneintro: oneintro,
             intro: intro,
           };
-          await addDoc(collection(db, "화이팅하시조"), doc);
-          alert("업로드 완료!");
-          window.location.reload();
+          if (!image) {
+            alert("이미지 파일을 업로드 해주세요.");
+          } else {
+            await addDoc(collection(db, "화이팅하시조"), doc);
+            alert("업로드 완료!");
+            window.location.reload();
+          }
         });
       }
 
@@ -173,6 +194,56 @@
       $("#closebtn").click(async function () {
         window.close();
       });
+
+      $("#submitFile").click(async () => {
+        const file = $("#file")[0].files[0];
+        putFile(file);
+        console.log(file);
+      });
+
+      const putFile = (file) => {
+        const albumBucketName = "spartaproj1"; // S3의 버킷 이름
+        const region = "ap-northeast-2"; // 서울
+
+        // 받은 키 넣기
+        const accessKeyId = "";
+        const secretAccessKey = "";
+        // 받은 키 넣기
+
+        AWS.config.update({
+          region,
+          accessKeyId,
+          secretAccessKey,
+        });
+
+        const file_uuid = crypto.randomUUID();
+        const fileName = file_uuid + file.name;
+
+        const upload = new AWS.S3.ManagedUpload({
+          params: {
+            Bucket: albumBucketName,
+            Key: file_uuid + file.name,
+            Body: file,
+            "Content-Type": file.type,
+          },
+        });
+
+        const promise = upload.promise();
+
+        promise.then(
+          function (data) {
+            console.log(data);
+            $("#imagebox").attr("src", data.Location);
+            aws_image_url = data.Location;
+          },
+          function (err) {
+            return console.log(
+              "There was an error uploading your photo: ",
+              err.message
+            );
+          }
+        );
+      };
     </script>
   </head>
 
@@ -189,7 +260,7 @@
           <label for="exampleFormControlInput1" class="form-label">이름</label>
           <input type="email" class="form-control" id="name" />
         </div>
-        <div class="row g-1 mb-3">
+        <!-- <div class="row g-1 mb-3">
           <label for="inputPassword2" class="form-label">이미지 링크</label>
           <div class="col-auto">
             <input type="email" class="form-control" id="image" />
@@ -197,6 +268,24 @@
           <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3" id="previewbtn">
               미리 보기
+            </button>
+          </div>
+        </div> -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >사진 파일</label
+          >
+          <div class="col-auto">
+            <input
+              type="file"
+              class="form-control"
+              id="file"
+              accept="image/*"
+            />
+          </div>
+          <div class="col-auto" id="uploadbtn">
+            <button type="submit" class="btn btn-primary mb-3" id="submitFile">
+              업로드
             </button>
           </div>
         </div>

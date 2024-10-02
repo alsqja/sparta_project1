@@ -84,3 +84,19 @@ try {
 } catch (error) {
   console.error("There was a problem with the fetch operation:", error);
 }
+
+$("#uploadbtn").click(async function () {
+  window.open(
+    "/popup.html",
+    "_blank",
+    "width=800, height=600, top=50, left=50, scrollbars=yes"
+  );
+});
+
+$("#joinbtn").click(async function () {
+  window.open(
+    "/popup.html",
+    "_blank",
+    "width=800, height=600, top=50, left=50, scrollbars=yes"
+  );
+});
