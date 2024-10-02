@@ -161,6 +161,15 @@
         });
       }
 
+      $("#previewbtn").click(async () => {
+        const image_url = $("#image").val();
+        if (image_url) {
+          $("#imagebox").attr("src", image_url);
+        } else {
+          alert("이미지 링크를 입력해주세요!");
+        }
+      });
+
       $("#closebtn").click(async function () {
         window.close();
       });
