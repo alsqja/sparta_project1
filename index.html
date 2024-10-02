@@ -4,12 +4,142 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/reset.css" />
-    <script type="module" src="/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <script type="module" src="script.js"></script>
     <title>화이팅하시조</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    메인페이지입니다.
+    <header class="d-flex justify-content-around py-3" id="header">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link text-dark" id="logo">로고</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="#" class="nav-link text-dark">화이팅하시조</a>
+        </li> -->
+      </ul>
+      <ul class="nav nav-pills">
+        <!-- <li class="nav-item">
+          <a href="#" class="nav-link text-dark">로고</a>
+        </li> -->
+        <li class="nav-item">
+          <div class="nav-link text-dark">화이팅하시조</div>
+        </li>
+      </ul>
+      <div class="text-end">
+        <button type="button" class="btn btn-dark">join</button>
+      </div>
+    </header>
+    <!-- 메인사진 ~ 팀설명내용까지 컨테이너 -->
+    <!-- <div class="container mt-5" id="main_img_container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mainImage p-5 text-center">
+            <h1 class="text-white" id="test">사진?</h1>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="mytitle" id="main_img_container">
+      <div>
+        <h1>혼자 할 수 있는 일은 거의 없다.</h1>
+        <h1>우리는 함께 많은 것을 할 수 있다.</h1>
+      </div>
+    </div>
+    <!-- 팀 문구 -->
+    <!-- <div
+      class="col-md-6 d-flex align-items-center justify-content-center teamWords"
+    >
+      <h2>팀 문구(한마디) 화이팅!</h2>
+    </div> -->
+    <!-- </div> -->
+    <!-- 팀 소개 -->
+    <div class="teamItdBox">
+      <p class="teamItd">팀소개</p>
+    </div>
+
+    <!-- 내용 -->
+    <div class="container mt-5">
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="contentSection p-4">
+            <h5>내용</h5>
+            <ul>
+              <li>팀에 대한 설명</li>
+              <li>우리 팀만의 특징</li>
+              <li>궁극적인 목표</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+    <!-- 메인사진 ~ 팀설명내용까지 컨테이너 끝 -->
+    <div class="mycards">
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="card-container">
+        <!-- <div class="col" id="alsqja">
+          <div class="card h-100">
+            <img
+              src="https://cdn.discordapp.com/attachments/702174718534615061/1290490031097778209/KakaoTalk_Photo_2024-09-25-16-59-41.jpeg?ex=66fca5ff&is=66fb547f&hm=397addeb76217fdc6b0201137904df425a3bcc3161c1ead3c025f193eb68f382&"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">팀장</h5>
+              <p class="card-text">김민범</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="audgh">
+          <div class="card h-100">
+            <img
+              src="https://ca.slack-edge.com/T06B9PCLY1E-U07G8DR5PAB-93fe05a5ad56-512"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">팀원</h5>
+              <p class="card-text">김명호</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="rkgus">
+          <div class="card h-100">
+            <img
+              src="https://ca.slack-edge.com/T06B9PCLY1E-U07GV46F4SX-0545e5a5540f-512"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">팀원</h5>
+              <p class="card-text">정가현</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="tndus">
+          <div class="card h-100">
+            <img
+              src="https://ca.slack-edge.com/T06B9PCLY1E-U07JF35QL7M-22f448842711-512"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">팀원</h5>
+              <p class="card-text">허수연</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div id="news_title">최신 뉴스 모아보기</div>
+    <div id="news_container"></div>
   </body>
 </html>

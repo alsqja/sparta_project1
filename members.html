@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/reset.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <script type="module" src="members_script.js"></script>
+    <link rel="stylesheet" href="member_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>화이팅하시조</title>
   </head>
   <body>
-    <div>members</div>
+    <header class="d-flex justify-content-around py-3" id="header">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link text-dark" id="logo">로고</a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <div class="nav-link text-dark">화이팅하시조</div>
+        </li>
+      </ul>
+      <div class="text-end">
+        <button type="button" class="btn btn-dark">join</button>
+      </div>
+    </header>
+    <div id="members_main_img"></div>
+    <div id="members_title">
+      <div id="oneintro"></div>
+      <div id="name"></div>
+    </div>
+    <div id="members_body">
+      <div id="members_photo"></div>
+      <div id="members_contents">
+        <li>
+          <div class="list_title">역할</div>
+          <div id="role"></div>
+        </li>
+        <li>
+          <div class="list_title">MBTI</div>
+          <div id="mbti"></div>
+        </li>
+        <li>
+          <div class="list_title">Blog</div>
+          <a href="https://velog.io/@alsqja2626/posts" id="blog"></a>
+        </li>
+        <li>
+          <div class="list_title">Github</div>
+          <a id="github" href="https://github.com/alsqja"></a>
+        </li>
+        <li>
+          <div class="list_title">한마디</div>
+          <div id="oneword"></div>
+        </li>
+      </div>
+    </div>
+    <div id="intro"></div>
+    <div id="members_button_container">
+      <div id="modify">수정</div>
+      <div id="delete">삭제</div>
+    </div>
   </body>
 </html>

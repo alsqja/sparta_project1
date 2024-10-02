@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+* {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#members_main_img {
+  margin-top: 100px;
+  width: 100%;
+  height: 450px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bNtpJSW9PGeMzDKIGrFgGQORSIuheUgr7w&s");
+  background-position: center;
+  background-size: cover;
+}
+
+#members_title {
+  font-size: 36px;
+  width: 1260px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#members_title > div {
+  margin-top: 20px;
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+#members_body {
+  display: flex;
+  width: 1260px;
+  margin: 0 auto;
+}
+
+#members_photo {
+  width: 500px;
+  height: 400px;
+  /* background-image: url("https://cdn.discordapp.com/attachments/702174718534615061/1290490031097778209/KakaoTalk_Photo_2024-09-25-16-59-41.jpeg?ex=66fca5ff&is=66fb547f&hm=397addeb76217fdc6b0201137904df425a3bcc3161c1ead3c025f193eb68f382&"); */
+  background-position: center;
+  background-size: cover;
+}
+
+#members_contents {
+  flex: 1;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40px;
+}
+
+#members_contents > li {
+  all: unset;
+  font-size: 25px;
+  display: flex;
+}
+.list_title {
+  width: 150px;
+  font-weight: bold;
+}
+
+#intro {
+  width: 1000px;
+  margin: 50px auto;
+  font-size: 20px;
+  white-space: pre-wrap;
+}
+
+#members_button_container {
+  display: flex;
+  width: 1260px;
+  justify-content: end;
+  margin: 50px auto;
+}
+
+#members_button_container > div {
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+}
+
+#members_button_container > div:hover {
+  background-color: #a42020;
+}
+
+/* 헤더설정 지우기 */
+#header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: white;
+}
+/* 헤더설정 지우기 */
+
+/* 뉴스 설정 복붙하기 */
+#news_container {
+  width: 1260px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_box {
+  width: 900px;
+  height: 100px;
+  padding: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.news_box > div {
+  height: 30px;
+}
+
+/* 뉴스 설정 복붙하기 */
