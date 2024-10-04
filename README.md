@@ -21,3 +21,15 @@
     <img src="https://github.com/user-attachments/assets/50957794-b6bb-499e-ac07-8b7c3660021e"/>
   </div>
 </details>
+<details>
+  <summary>카드 상세보기</summary>
+  <div markdown="1">
+    <img src="https://github.com/user-attachments/assets/b70b170d-9855-4b61-867b-166ba2ec24c2"/>
+  </div>
+</details>
+<details>
+  <summary>카드 추가하기</summary>
+  <div markdown="1">
+    <img src="https://github.com/user-attachments/assets/f049252e-7ac0-4a22-86bc-8df79acb39b9"/>
+  </div>
+</details>
