@@ -56,8 +56,13 @@
 
 | 이름              | Github 프로필  | 포지션     | 역할 |
 | ----------------- | -------------- | ---------- | ---- |
-| [김민범](#김민범) | [alsqja]      | 카드 상세보기, 수정, 삭제     | 팀장 |
-| [허수연](#허수연) | [sooyeoneo]       | 멤버카드 리스트, 헤더  | 팀원 |
-| [정가현](#정가현) | [kahyun0608]    | 카드 만들기  | 팀원 |
-| [김명호](#김명호) | [KimMyungHo919]  | 메인 페이지 제작 | 팀원 |
+| 김민범 | [alsqja]      | 카드 상세보기, 수정, 삭제     | 팀장 |
+| 허수연 | [sooyeoneo]       | 멤버카드 리스트, 헤더  | 팀원 |
+| 정가현 | [kahyun0608]    | 카드 만들기  | 팀원 |
+| 김명호 | [KimMyungHo919]  | 메인 페이지 제작 | 팀원 |
+
+[alsqja]: https://github.com/alsqja
+[sooueoneo]: https://github.com/sooyeoneo
+[kahyun0608]: https://github.com/kahyun0608
+[KimMyungHo919]: https://github.com/KimMyungHo919
 
