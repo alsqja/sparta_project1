@@ -18,6 +18,7 @@
 <details>
   <summary>메인 화면</summary>
   <div markdown="1">
-    <img src="https://spartaproj1.s3.ap-northeast-2.amazonaws.com/%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB+%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A7%E1%86%AB.gif"/>
+<!--     <img src="https://spartaproj1.s3.ap-northeast-2.amazonaws.com/%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB+%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A7%E1%86%AB.gif"/> -->
+    ![메인화면시연test](https://github.com/user-attachments/assets/50957794-b6bb-499e-ac07-8b7c3660021e)
   </div>
 </details>
