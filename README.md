@@ -15,6 +15,7 @@
 - 멤버 카드 클릭 시 디테일 페이지로 이동 할 수 있다.
 
 ## ✨기능별 시연
+
 <details>
   <summary>메인 화면</summary>
   <div markdown="1">
@@ -66,3 +67,16 @@
 [kahyun0608]: https://github.com/kahyun0608
 [KimMyungHo919]: https://github.com/KimMyungHo919
 
+## ✨Tech Stacks
+
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- Firebase
+- AWS S3
+
+## ✨개선사항
+
+- 데이터 입력 시 createAt 컬럼을 추가해 시간별 정렬을 보다 쉽게 구현할 수 있다.
+- 데이터 입력 시 id 컬럼을 추가해 데이터의 구분을 보다 명확하게 할 수 있다.
