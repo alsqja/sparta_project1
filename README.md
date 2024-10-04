@@ -126,6 +126,9 @@
   width: 250px;
 }
 ```
+- `overflow-x: scroll` 속성을 사용하여 가로 스크롤 구현
+- 구현 과정에서 overflow 가 발생하지 않고 카드의 width가 줄어들며 나열되는 현상 발생 => bootstrap `.card`의 css 속성에 width 값이 % 형태로 부여되어 발생하는 현상으로 확인 후 `width: 250px` 속성으로 해결
+
 
 ## ✨개선사항
 
