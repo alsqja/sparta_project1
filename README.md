@@ -1,4 +1,4 @@
-# [화이팅하시조]
+# 화이팅하시조
 
 주제 : 저희 팀 만의 특징과 목표, 팀원 각자에 대한 소개를 하는 페이지
 
@@ -17,4 +17,7 @@
 ## ✨기능별 시연
 <details>
   <summary>메인 화면</summary>
+  <div markdown="1">
+    <img src="https://spartaproj1.s3.ap-northeast-2.amazonaws.com/%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB+%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A7%E1%86%AB.gif"/>
+  </div>
 </details>
