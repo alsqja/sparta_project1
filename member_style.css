@@ -117,28 +117,3 @@
   background-color: white;
 }
 /* 헤더설정 지우기 */
-
-/* 뉴스 설정 복붙하기 */
-#news_container {
-  width: 1260px;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.news_box {
-  width: 900px;
-  height: 100px;
-  padding: 30px;
-  border: 1px solid black;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.news_box > div {
-  height: 30px;
-}
-
-/* 뉴스 설정 복붙하기 */

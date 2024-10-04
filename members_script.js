@@ -66,10 +66,6 @@ const dummy = {
   role: "asd",
 };
 
-// $("#modify").click(async () => {
-//   await addDoc(collection(db, "화이팅하시조"), dummy);
-// });
-
 $("#delete").click(async () => {
   if (confirm("삭제하시겠습니까?")) {
     await deleteDoc(doc(db, "화이팅하시조", id));
@@ -83,5 +79,13 @@ $("#modify").click(async () => {
     `/popup.html?name=${param}`,
     "_black",
     "width=800, height=600, top=0, left=0"
+  );
+});
+
+$("#joinbtn").click(async function () {
+  window.open(
+    "/popup.html",
+    "_blank",
+    "width=800, height=600, top=50, left=50, scrollbars=yes"
   );
 });
