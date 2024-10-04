@@ -33,3 +33,21 @@
     <img src="https://github.com/user-attachments/assets/f049252e-7ac0-4a22-86bc-8df79acb39b9"/>
   </div>
 </details>
+<details>
+  <summary>카드 수정하기</summary>
+  <div markdown="1">
+    <img src="https://github.com/user-attachments/assets/28967437-ee58-411c-8800-961ad54c3293"/>
+  </div>
+</details>
+<details>
+  <summary>카드 삭제하기</summary>
+  <div markdown="1">
+    <img src="https://github.com/user-attachments/assets/86b346e8-abf8-444b-8a31-eca4bb78dcc2"/>
+  </div>
+</details>
+<details>
+  <summary>페이지 이동하기</summary>
+  <div markdown="1">
+    <img src="https://github.com/user-attachments/assets/167ccf07-2601-46f8-973c-84c693cbdee9"/>
+  </div>
+</details>
