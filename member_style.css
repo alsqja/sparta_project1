@@ -13,7 +13,13 @@
   background-position: center;
   background-size: cover;
 }
-
+#logo_back {
+  background-image: url("https://pds.saramin.co.kr/company/logo/202203/10/r8irhx_27rz-iuruh_logo.png");
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 53px;
+}
 #members_title {
   font-size: 36px;
   width: 1260px;
@@ -89,12 +95,12 @@
   font-size: 20px;
   font-weight: bold;
   border-radius: 15px;
-  background-color: green;
+  background-color: #254277;
   color: white;
 }
 
 #members_button_container > div:hover {
-  background-color: #a42020;
+  background-color: #254277e7;
 }
 
 /* 헤더설정 지우기 */

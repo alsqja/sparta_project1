@@ -19,16 +19,10 @@
     <header class="d-flex justify-content-around py-3" id="header">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="/index.html" class="nav-link text-dark" id="logo">로고</a>
+          <a href="/index.html" class="nav-link text-dark" id="logo_back"></a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link text-dark">화이팅하시조</a>
-        </li> -->
       </ul>
       <ul class="nav nav-pills">
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link text-dark">로고</a>
-        </li> -->
         <li class="nav-item">
           <div class="nav-link text-dark">화이팅하시조</div>
         </li>
@@ -37,16 +31,6 @@
         <button type="button" class="btn btn-dark" id="joinbtn">join</button>
       </div>
     </header>
-    <!-- 메인사진 ~ 팀설명내용까지 컨테이너 -->
-    <!-- <div class="container mt-5" id="main_img_container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="mainImage p-5 text-center">
-            <h1 class="text-white" id="test">사진?</h1>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="mytitle" id="main_img_container">
       <div>
         <h1>혼자 할 수 있는 일은 거의 없다.</h1>
@@ -70,11 +54,22 @@
       <div class="row mt-3">
         <div class="col-12">
           <div class="contentSection p-4">
-            <h5>내용</h5>
+            <div>저희 2조는...</div>
             <ul>
-              <li>팀에 대한 설명</li>
-              <li>우리 팀만의 특징</li>
-              <li>궁극적인 목표</li>
+              <li>
+                현업 개발자 출신부터 예체능 전공자와 비전공자 대학생까지 다양한
+                사람들이 모여 하나의 목표를 향해 달려가는 팀입니다. 서로가 가장
+                다를 때 모여 같은 종착점에서 만나고 싶습니다.
+              </li>
+              <li>
+                조용조용 할 일을 다 하면서 책임감 있게 끝까지 해결하는 팀입니다.
+                포기하지 않는게 저희 팀의 좌우명 입니다.
+              </li>
+              <li>
+                다른 사람 앞에서 당당하게 개발자다! 말할 수 있는 실력을 갖추고,
+                협업과정에서 서로의 능력을 더욱 끌어낼 수 있는 팀이 되려고
+                합니다.
+              </li>
             </ul>
           </div>
         </div>
@@ -84,59 +79,8 @@
     <!-- </div> -->
     <!-- 메인사진 ~ 팀설명내용까지 컨테이너 끝 -->
     <div class="mycards">
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="card-container">
-        <!-- <div class="col" id="alsqja">
-          <div class="card h-100">
-            <img
-              src="https://cdn.discordapp.com/attachments/702174718534615061/1290490031097778209/KakaoTalk_Photo_2024-09-25-16-59-41.jpeg?ex=66fca5ff&is=66fb547f&hm=397addeb76217fdc6b0201137904df425a3bcc3161c1ead3c025f193eb68f382&"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5 class="card-title">팀장</h5>
-              <p class="card-text">김민범</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="audgh">
-          <div class="card h-100">
-            <img
-              src="https://ca.slack-edge.com/T06B9PCLY1E-U07G8DR5PAB-93fe05a5ad56-512"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5 class="card-title">팀원</h5>
-              <p class="card-text">김명호</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="rkgus">
-          <div class="card h-100">
-            <img
-              src="https://ca.slack-edge.com/T06B9PCLY1E-U07GV46F4SX-0545e5a5540f-512"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5 class="card-title">팀원</h5>
-              <p class="card-text">정가현</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="tndus">
-          <div class="card h-100">
-            <img
-              src="https://ca.slack-edge.com/T06B9PCLY1E-U07JF35QL7M-22f448842711-512"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5 class="card-title">팀원</h5>
-              <p class="card-text">허수연</p>
-            </div>
-          </div>
-        </div> -->
+      <div id="card-wrap">
+        <div id="card-container"></div>
       </div>
     </div>
     <div class="d-grid gap-2 col-6 mx-auto" id="buttdiv">

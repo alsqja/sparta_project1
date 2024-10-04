@@ -26,11 +26,22 @@ const q = collection(db, "화이팅하시조");
 const docs = await getDocs(q);
 
 //  불러온 데이터(docs) 처리
+
+const datas = [];
+
 docs.forEach((doc) => {
   const values = doc.data();
-  //  values 에 불러온 데이터들만 담아두고
 
-  //  temp 변수에 카드 html 복사해서 id에 name, src에 image, 역할에 role, 이름에 name 할당
+  datas.push({
+    ...values,
+    createAt: doc._document.createTime.timestamp.seconds,
+  });
+  //  values 에 불러온 데이터들만 담아두고
+});
+
+datas.sort((a, b) => a.createAt - b.createAt);
+
+datas.forEach((values) => {
   const temp = `
         <div class="col" id=${values.name}>
           <div class="card h-100">
@@ -38,6 +49,7 @@ docs.forEach((doc) => {
               src="${values.image}"
               class="card-img-top"
               alt=""
+              height="300"
             />
             <div class="card-body">
               <h5 class="card-title">${values.role}</h5>
@@ -49,6 +61,7 @@ docs.forEach((doc) => {
   //  card-container 에 temp 붙이기
   //  card-container 는 index.html 에서 <div class="row row-cols-1 row-cols-md-4 g-4"> 부분에 id=card-container 넣음
   $("#card-container").append(temp);
+  // $("#card-test").append(temp);
 
   //  붙여넣은 각 카드별로 id에 따른 클릭 이벤트 생성
   $(`#${values.name}`).click(async () => {
@@ -99,4 +112,27 @@ $("#joinbtn").click(async function () {
     "_blank",
     "width=800, height=600, top=50, left=50, scrollbars=yes"
   );
+});
+
+$("#card-wrap").on("wheel", function (event) {
+  event.preventDefault(); // 기본 세로 스크롤 방지
+
+  // deltaX와 deltaY 모두 가로 스크롤로 처리
+  const deltaX = event.originalEvent.deltaX;
+  const deltaY = event.originalEvent.deltaY;
+
+  const scrollLeft = $(this).scrollLeft();
+  const maxScrollLeft = this.scrollWidth - $(this).outerWidth();
+
+  // 가로 스크롤 끝에 도달했는지 확인
+  if (
+    (deltaY > 0 && scrollLeft >= maxScrollLeft) ||
+    (deltaY < 0 && scrollLeft <= 0)
+  ) {
+    // 가로 스크롤이 끝에 도달하면 세로 스크롤 허용
+    window.scrollBy(0, deltaY); // 세로 스크롤 동작
+  } else {
+    // 가로 스크롤 동작
+    $(this).scrollLeft(scrollLeft + deltaX + deltaY);
+  }
 });
