@@ -81,10 +81,27 @@
 - BootStrap 사이트에서 cards 템플릿을 가져와 멤버카드 받아오기 기능을 구현하던 중 멤버카드가 4장 이상 추가될 경우 아래 컴포넌트 위로 덮어씌워지는 현상 발생 => bootstrap 자체 css 문제로 판단
 - card 개수에 따른 margin 조절을 통해 해결할지 가로 스크롤을 도입할지 회의 후 가로 스크롤 도입 결정
 - 가로 스크롤 기능을 도입하는 과정에서 기존 bootstrap css와 충돌하여 원하는 결과물 도출에 어려움을 느낌
-```javascript
+```html
 <div class="mycards">
   <div id="card-wrap">
-    <div id="card-container"></div>
+    <div id="card-container">
+        //  script 를 통해 append 하는 부분
+        <div class="col" id=${values.name}>
+          <div class="card h-100">
+            <img
+              src="${values.image}"
+              class="card-img-top"
+              alt=""
+              height="300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">${values.role}</h5>
+              <p class="card-text">${values.name}</p>
+            </div>
+          </div>
+        </div>
+        //  append 완료
+    </div>
   </div>
 </div>
 ```
