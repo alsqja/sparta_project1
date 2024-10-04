@@ -75,6 +75,40 @@
 - JQuery
 - Firebase
 - AWS S3
+- BootStrap
+
+## ✨어려웠던 문제
+- BootStrap 사이트에서 cards 템플릿을 가져와 멤버카드 받아오기 기능을 구현하던 중 멤버카드가 4장 이상 추가될 경우 아래 컴포넌트 위로 덮어씌워지는 현상 발생 => bootstrap 자체 css 문제로 판단
+- card 개수에 따른 margin 조절을 통해 해결할지 가로 스크롤을 도입할지 회의 후 가로 스크롤 도입 결정
+- 가로 스크롤 기능을 도입하는 과정에서 기존 bootstrap css와 충돌하여 원하는 결과물 도출에 어려움을 느낌
+```javascript
+<div class="mycards">
+  <div id="card-wrap">
+    <div id="card-container"></div>
+  </div>
+</div>
+```
+```css
+#card-container {
+  max-height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#card-container > div {
+  margin: 0 10px;
+}
+
+#card-wrap {
+  width: 1100px;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+
+.card {
+  width: 250px;
+}
+```
 
 ## ✨개선사항
 
