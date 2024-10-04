@@ -62,7 +62,7 @@
 | 김명호 | [KimMyungHo919]  | 메인 페이지 제작 | 팀원 |
 
 [alsqja]: https://github.com/alsqja
-[sooueoneo]: https://github.com/sooyeoneo
+[sooyeoneo]: https://github.com/sooyeoneo
 [kahyun0608]: https://github.com/kahyun0608
 [KimMyungHo919]: https://github.com/KimMyungHo919
 
