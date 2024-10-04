@@ -112,6 +112,7 @@
           $("#mbti").val(values.mbti);
           $("#role").val(values.role);
           $("#image").val(values.image);
+          $("#imagebox").attr("src", values.image);
           id = doc.id;
         });
 
@@ -185,15 +186,6 @@
         });
       }
 
-      $("#previewbtn").click(async () => {
-        const image_url = $("#image").val();
-        if (image_url) {
-          $("#imagebox").attr("src", image_url);
-        } else {
-          alert("이미지 링크를 입력해주세요!");
-        }
-      });
-
       $("#closebtn").click(async function () {
         window.close();
       });
@@ -263,17 +255,6 @@
           <label for="exampleFormControlInput1" class="form-label">이름</label>
           <input type="email" class="form-control" id="name" />
         </div>
-        <!-- <div class="row g-1 mb-3">
-          <label for="inputPassword2" class="form-label">이미지 링크</label>
-          <div class="col-auto">
-            <input type="email" class="form-control" id="image" />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3" id="previewbtn">
-              미리 보기
-            </button>
-          </div>
-        </div> -->
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >사진 파일</label
