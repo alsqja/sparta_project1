@@ -85,7 +85,7 @@
 <div class="mycards">
   <div id="card-wrap">
     <div id="card-container">
-        //  script 를 통해 append 하는 부분
+        <!-- script 를 통해 append 하는 부분 -->
         <div class="col" id=${values.name}>
           <div class="card h-100">
             <img
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        //  append 완료
+        <!-- append 완료 -->
     </div>
   </div>
 </div>
