@@ -2,6 +2,20 @@
 
 주제 : 저희 팀 만의 특징과 목표, 팀원 각자에 대한 소개를 하는 페이지
 
+## ✨멤버
+
+| 이름              | Github 프로필  | 포지션     | 역할 |
+| ----------------- | -------------- | ---------- | ---- |
+| 김민범 | [alsqja]      | 카드 상세보기, 수정, 삭제     | 팀장 |
+| 허수연 | [sooyeoneo]       | 멤버카드 리스트, 헤더  | 팀원 |
+| 정가현 | [kahyun0608]    | 멤버카드 등록 페이지 제작  | 팀원 |
+| 김명호 | [KimMyungHo919]  | 메인 페이지 제작 | 팀원 |
+
+[alsqja]: https://github.com/alsqja
+[sooyeoneo]: https://github.com/sooyeoneo
+[kahyun0608]: https://github.com/kahyun0608
+[KimMyungHo919]: https://github.com/KimMyungHo919
+
 ## ✨기능
 
 - 모든 팀원 관련 정보를 읽어와 카드형식으로 볼 수 있다. (Read)
@@ -52,20 +66,6 @@
     <img src="https://github.com/user-attachments/assets/167ccf07-2601-46f8-973c-84c693cbdee9"/>
   </div>
 </details>
-
-## ✨멤버
-
-| 이름              | Github 프로필  | 포지션     | 역할 |
-| ----------------- | -------------- | ---------- | ---- |
-| 김민범 | [alsqja]      | 카드 상세보기, 수정, 삭제     | 팀장 |
-| 허수연 | [sooyeoneo]       | 멤버카드 리스트, 헤더  | 팀원 |
-| 정가현 | [kahyun0608]    | 멤버카드 등록 페이지 제작  | 팀원 |
-| 김명호 | [KimMyungHo919]  | 메인 페이지 제작 | 팀원 |
-
-[alsqja]: https://github.com/alsqja
-[sooyeoneo]: https://github.com/sooyeoneo
-[kahyun0608]: https://github.com/kahyun0608
-[KimMyungHo919]: https://github.com/KimMyungHo919
 
 ## ✨Tech Stacks
 
