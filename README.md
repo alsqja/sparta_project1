@@ -31,18 +31,6 @@
 ## ✨기능별 시연
 
 <details>
-  <summary>메인 화면</summary>
-  <div markdown="1">
-    <img src="https://github.com/user-attachments/assets/50957794-b6bb-499e-ac07-8b7c3660021e"/>
-  </div>
-</details>
-<details>
-  <summary>카드 상세보기</summary>
-  <div markdown="1">
-    <img src="https://github.com/user-attachments/assets/b70b170d-9855-4b61-867b-166ba2ec24c2"/>
-  </div>
-</details>
-<details>
   <summary>카드 추가하기</summary>
   <div markdown="1">
     <img src="https://github.com/user-attachments/assets/f049252e-7ac0-4a22-86bc-8df79acb39b9"/>
@@ -58,12 +46,6 @@
   <summary>카드 삭제하기</summary>
   <div markdown="1">
     <img src="https://github.com/user-attachments/assets/86b346e8-abf8-444b-8a31-eca4bb78dcc2"/>
-  </div>
-</details>
-<details>
-  <summary>페이지 이동하기</summary>
-  <div markdown="1">
-    <img src="https://github.com/user-attachments/assets/167ccf07-2601-46f8-973c-84c693cbdee9"/>
   </div>
 </details>
 
